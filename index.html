@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.shop {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+			transition: all 0.3s ease 0s;
+		}
+		.shop__side {
+			width: 33%;
+			overflow-y: auto;
+			/* padding: 30px; */
+		}
+		.item {
+			margin: 0;
+			padding: 0;
+			list-style: square;
+			font-size: 24px;
+			cursor: pointer;
+		}
+		.product {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			border-radius: 7px;
+			background-color: #efefef;
+		}
+		.message {
+			display: block;
+   	  width: 100%;
+			font-size: 33px;
+			color: red;
+			text-align: center;
+		}
+		.hidden {
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="shop">
+		<div class="shop__side categories">
+			<ul class="categories__list"></ul>
+		</div>
+		<div class="shop__side products">
+			<ul class="products__list"></ul>
+		</div>
+		<div class="shop__side product">
+			<div class="product__info"></div>
+		</div>
+	</div>
+	<span class="message hidden">Successfully bought!</span>
+	<script src="main.js"></script>
+</body>
+</html>
